@@ -1,13 +1,13 @@
 $(function(){
 
     const appendTask = function(data){
-        var TaskCode = '<a href="#" class="task-link" data-id="' +
+        var taskCode = '<a href="#" class="task-link" data-id="' +
             data.id + '">' + data.name + '</a><br>';
         $('#task-list')
-            .append('<div>' + TaskCode + '</div>');
+            .append('<div>' + taskCode + '</div>');
     };
 
-//    Loading tasks on load page
+   // Loading tasks on load page
 //    $.get('/tasks/', function(response)
 //    {
 //        for(i in response) {
